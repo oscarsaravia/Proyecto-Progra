@@ -1,13 +1,23 @@
 <component name="libraryTable">
   <library name="lib">
     <CLASSES>
-      <root url="file://$USER_HOME$/Downloads/javafx-sdk-12.0.2/lib" />
+      <root url="file://$USER_HOME$/Downloads/javafx-sdk-12.0.2 2/lib" />
     </CLASSES>
     <JAVADOC />
+    <NATIVE>
+      <root url="file://$USER_HOME$/Downloads/javafx-sdk-12.0.2 2/lib" />
+    </NATIVE>
     <SOURCES>
-      <root url="file://$USER_HOME$/Downloads/javafx-sdk-12.0.2/lib" />
+      <root url="file://$USER_HOME$/Downloads/javafx-sdk-12.0.2 2/lib/src/javafx.base" />
+      <root url="file://$USER_HOME$/Downloads/javafx-sdk-12.0.2 2/lib/src/javafx.controls" />
+      <root url="file://$USER_HOME$/Downloads/javafx-sdk-12.0.2 2/lib/src/javafx.fxml" />
+      <root url="file://$USER_HOME$/Downloads/javafx-sdk-12.0.2 2/lib/src/javafx.graphics" />
+      <root url="file://$USER_HOME$/Downloads/javafx-sdk-12.0.2 2/lib/src/javafx.media" />
+      <root url="file://$USER_HOME$/Downloads/javafx-sdk-12.0.2 2/lib/src/javafx.swing" />
+      <root url="file://$USER_HOME$/Downloads/javafx-sdk-12.0.2 2/lib/src/javafx.web" />
+      <root url="file://$USER_HOME$/Downloads/javafx-sdk-12.0.2 2/lib" />
     </SOURCES>
-    <jarDirectory url="file://$USER_HOME$/Downloads/javafx-sdk-12.0.2/lib" recursive="false" />
-    <jarDirectory url="file://$USER_HOME$/Downloads/javafx-sdk-12.0.2/lib" recursive="false" type="SOURCES" />
+    <jarDirectory url="file://$USER_HOME$/Downloads/javafx-sdk-12.0.2 2/lib" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/Downloads/javafx-sdk-12.0.2 2/lib" recursive="false" type="SOURCES" />
   </library>
 </component>
