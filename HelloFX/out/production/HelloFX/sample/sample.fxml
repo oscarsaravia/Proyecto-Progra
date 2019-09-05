@@ -21,8 +21,9 @@
             <Button layoutX="34.0" layoutY="105.0" mnemonicParsing="false" text="¿QUÉ CULTIVO PUEDO TENER?" />
             <Button layoutX="36.0" layoutY="176.0" mnemonicParsing="false" text="CALENDARIO DE ACTIVIDADES" />
             <Button layoutX="36.0" layoutY="211.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="182.0" text="TUTORIALES" />
-            <Button layoutX="38.0" layoutY="250.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="181.0" text="peneeeeeeee" />
-            <Button layoutX="38.0" layoutY="250.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="181.0" text="shoooooo" />
+            <Button layoutX="38.0" layoutY="250.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="181.0" text="CONTACTOS DE INTERÉS" />
+            <Button layoutX="38.0" layoutY="250.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="181.0" text="AYUDA" />
+            <Button layoutX="38.0" layoutY="250.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="181.0" text="SALIR" />
          </children>
       </AnchorPane>
    </children>
