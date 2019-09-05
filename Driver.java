@@ -11,6 +11,8 @@ public class Driver{
 		int opcion = scan.nextInt();
 
 		Cultivo cultivo = new Cultivo();
+		Tutoriales tutos = new Tutoriales();
+		Calendario calendar=new Calendario();
 
 		if(opcion == 1){
 			System.out.println("En que clima esta ubicado?\n 1. Calido\n 2. Templado\n 3. Frio");
@@ -35,10 +37,98 @@ public class Driver{
 			
 		}
 		else if(opcion == 2){
-			System.out.println("Funcion pendiente");
+			if(cultivo.getCultivo()=="cardamomo") {
+				calendar.Cardamomo();
+			}
+			else if(cultivo.getCultivo()=="frijol") {
+				calendar.Frijol();
+			}
+			else if(cultivo.getCultivo()=="maiz") {
+				calendar.Maiz();
+			}
+			else if(cultivo.getCultivo()=="cafe") {
+				calendar.Cafe();
+			}
+			else if(cultivo.getCultivo()=="limon") {
+				calendar.Limon();
+			}
+			else if(cultivo.getCultivo()=="tomate") {
+				calendar.Tomate();
+			}
+			else if(cultivo.getCultivo()=="papa") {
+				calendar.Papa();
+			}
+			else if(cultivo.getCultivo()=="chile") {
+				calendar.Chile();
+			}
+			else if(cultivo.getCultivo()=="guisquil") {
+				calendar.Guisquil();
+			}
+			else if(cultivo.getCultivo()=="guicoy") {
+				calendar.Guicoy();
+			}
+			else if(cultivo.getCultivo()=="yuca") {
+				calendar.Yuca();
+			}
+			else if(cultivo.getCultivo()=="aguacate") {
+				calendar.Aguacate();
+			}
+			else if(cultivo.getCultivo()=="rabano") {
+				calendar.Rabano();
+			}
+			else if(cultivo.getCultivo()=="remolacha") {
+				calendar.Remolacha();
+			}
+			else if(cultivo.getCultivo()=="cebolla") {
+				calendar.Cebolla();
+			}
 		}
 		else if(opcion == 3){
-			System.out.println("Funcion pendiente");
+			if(cultivo.getCultivo()=="cardamomo") {
+				tutos.verCardamomo();
+			}
+			else if(cultivo.getCultivo()=="frijol") {
+				tutos.verFrijol();
+			}
+			else if(cultivo.getCultivo()=="maiz") {
+				tutos.verMaiz();
+			}
+			else if(cultivo.getCultivo()=="cafe") {
+				tutos.verCafe();
+			}
+			else if(cultivo.getCultivo()=="limon") {
+				tutos.verLimon();
+			}
+			else if(cultivo.getCultivo()=="tomate") {
+				tutos.verTomate();
+			}
+			else if(cultivo.getCultivo()=="papa") {
+				tutos.verPapa();
+			}
+			else if(cultivo.getCultivo()=="chile") {
+				tutos.verChile();
+			}
+			else if(cultivo.getCultivo()=="guisquil") {
+				tutos.verGuisquil();
+			}
+			else if(cultivo.getCultivo()=="guicoy") {
+				tutos.verGuicoy();
+			}
+			else if(cultivo.getCultivo()=="yuca") {
+				tutos.verYuca();
+			}
+			else if(cultivo.getCultivo()=="aguacate") {
+				tutos.verAguacate();
+			}
+			else if(cultivo.getCultivo()=="rabano") {
+				tutos.verRabano();
+			}
+			else if(cultivo.getCultivo()=="remolacha") {
+				tutos.verRemolacha();
+			}
+			else if(cultivo.getCultivo()=="cebolla") {
+				tutos.verCebolla();
+			}
 		}
 	}
 }
