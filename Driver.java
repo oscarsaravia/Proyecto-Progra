@@ -9,10 +9,14 @@ public class Driver{
 
 		System.out.println("Bienvenido\n Que desea hacer?\n 1. Conocer el cultivo que debe plantar\n 2. Calendario de su cultivo\n 3. Tutorial del cultivo");
 		int opcion = scan.nextInt();
+		
+		//INSTANCIAR OBJETOS
 
 		Cultivo cultivo = new Cultivo();
 		Tutoriales tutos = new Tutoriales();
 		Calendario calendar=new Calendario();
+		
+		//PEDIR DATOS AL USUARIO 
 
 		if(opcion == 1){
 			System.out.println("En que clima esta ubicado?\n 1. Calido\n 2. Templado\n 3. Frio");
