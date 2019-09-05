@@ -10,11 +10,13 @@ public class Cultivo{
 	private String[] templado = {"Huehuetenango", "Quiche", "Alta Verapaz", "San Marcos", "Baja Verapaz", "El Progreso", "Guatemala", "Jalapa", "Escuintla", "Suchitepequez"};
 	private String[] frio = {"Huehuetenango", "Quiche", "San Marcos", "Quetzaltenango", "Totonicapan", "Solola", "Chimaltenango", "Sacatepequez", "Guatemala"};
 
+	//Constructor de cultivo
 	public void generarCultivo(String climate, String departamento){
 		this.climate = climate;
 		this.departamento = departamento;
 	}
 
+	//De acuddo al clima ingresado, se muestran los departamentos pertenecientes al clima
 	public void mostrarDept(int clima){
 		if(clima == 1){
 			for(int i=0; i<calido.length;i++){
@@ -34,6 +36,7 @@ public class Cultivo{
 	}
 
 
+	//Muetra cultivo de acuerdo al clima y el departamento
 	public void mostrarCultivo(String clima, String departamento){
 	if(clima.equalsIgnoreCase("Calido")){
 		if(departamento.equalsIgnoreCase("Peten")){
