@@ -22,9 +22,7 @@ public class Controller {
     }
     public javafx.scene.control.Button closeButton;
     public void closeButtonAction(){
-        // get a handle to the stage
         Stage stage = (Stage) closeButton.getScene().getWindow();
-        // do what you have to do
         stage.close();
     }
 }
