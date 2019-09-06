@@ -1,24 +1,24 @@
-//Oliver JosuÃ© de LeÃ³n Milian
+//Oliver Josué de León Milian
 //Clase Calendario
 //Terra Plus
 //Almacena cada una de las calendarizaciones correspondiente a cada uno de los cultivos.
 
 public class Calendario {
-    //MÃ©todos 
+    //Métodos 
 
-    //CalendarizaciÃ³n por cÃºltivo
+    //Calendarización por cúltivo
 
     //Cardamomo
     //Frijol
-    //CaÃ±a
-    //MaÃ­z
-    //CafÃ©
-    //LimÃ³n 
+    //Caña
+    //Maíz
+    //Café
+    //Limón 
     //Tomate
     //Papa
     //Chile
-    //GÃ¼isquil
-    //GÃ¼icoy
+    //Güisquil
+    //Güicoy
     //Yuca
     //Aguacate
     //Rabano
@@ -26,129 +26,129 @@ public class Calendario {
     //Cebolla
   
 
-//CalendarizaciÃ³n BÃ¡sica de RevisiÃ³n de ciclos de protecciÃ³n y analisis de cultivo    
+//Calendarización Básica de Revisión de ciclos de protección y analisis de cultivo    
     public void Ciclos_Revision(){
         for (int i = 3; i < 25; i++){
-            System.out.println(i+": RevisiÃ³n mensual, para revisiÃ³n de abono y suministro de agua");
+            System.out.println(i+": Revisión mensual, para revisión de abono y suministro de agua");
         }
     }
-    //CalendarizaciÃ³n BÃ¡sica de los cultivos
+    //Calendarización Básica de los cultivos
     public void Calendarizacion_Proceso_Basico(){
-        System.out.println("CALENDARIZACIÃ“N DE PROCESO BÃSICO");
-        System.out.println("DÃ­a 1: Realizar muestreos quÃ­micos del terreno (Consultar el apartado de contactos)");
-        System.out.println("DÃ­a 1: Realizar muestreos quÃ­micos del agua potable (Consultar el apartado de contactos)");
-        System.out.println("DÃ­a 10: Recoger resultados del muestreo quÃ­mico");
-        System.out.println("DÃ­a 11: Comentar con un experto quÃ­mico o agronomo los resultados obtenidos (Consultar el apartado de contactos)");
-        System.out.println("DÃ­a 15: Comenzar la labor de limpieza del terreno (ExtracciÃ³n de malas hierbas y plantaciÃ³n de Ã¡rboles de sombra)");
-        System.out.println("DÃ­a 17: Comprar el abono sugerido por el programa, o el sugerido por el experto al que ha consultado (Consultar el apartado de contactos)");
-        System.out.println("DÃ­a 19: Comenzar los arreglos quÃ­micos, que puedan resolver el estado quÃ­mico desequilibrado del agua o la tierra");
-        System.out.println("DÃ­a 21: Crear un depÃ³sito de agua, si hay un pre-existente, asegurarse de ubicarlo al menos a 2.5 metros de altura");
-        System.out.println("DÃ­a 22: Crear un sistema de riego proveniente del depÃ³sito de agua, la altura permitirÃ¡ mitigar el uso de una bomba de presiÃ³n");
+        System.out.println("CALENDARIZACIÓN DE PROCESO BÁSICO");
+        System.out.println("Día 1: Realizar muestreos químicos del terreno (Consultar el apartado de contactos)");
+        System.out.println("Día 1: Realizar muestreos químicos del agua potable (Consultar el apartado de contactos)");
+        System.out.println("Día 10: Recoger resultados del muestreo químico");
+        System.out.println("Día 11: Comentar con un experto químico o agronomo los resultados obtenidos (Consultar el apartado de contactos)");
+        System.out.println("Día 15: Comenzar la labor de limpieza del terreno (Extracción de malas hierbas y plantación de árboles de sombra)");
+        System.out.println("Día 17: Comprar el abono sugerido por el programa, o el sugerido por el experto al que ha consultado (Consultar el apartado de contactos)");
+        System.out.println("Día 19: Comenzar los arreglos químicos, que puedan resolver el estado químico desequilibrado del agua o la tierra");
+        System.out.println("Día 21: Crear un depósito de agua, si hay un pre-existente, asegurarse de ubicarlo al menos a 2.5 metros de altura");
+        System.out.println("Día 22: Crear un sistema de riego proveniente del depósito de agua, la altura permitirá mitigar el uso de una bomba de presión");
         System.out.println("Si se requiriera una bomba de agua, puede consultar el apartado de contactos");
     }
-    //InformaciÃ³n de fechas para Cardamomo}
+    //Información de fechas para Cardamomo}
     public void Cardamomo(){
-        System.out.println("DÃ­a 23: Comprar los pilones de Ã¡rbol, que servirÃ¡n para sombra");
-        System.out.println("IMPORTANTE: Tomar en cuenta que el tamaÃ±o de estos Ã¡rboles debe ocupar un espacio promedio de 8 metros cuadrados")
-        System.out.println("2do Mes: Colocar los pilones de cardamomo debajo de los Ã¡rboles plantados hace 1 mes");
+        System.out.println("Día 23: Comprar los pilones de árbol, que servirán para sombra");
+        System.out.println("IMPORTANTE: Tomar en cuenta que el tamaño de estos árboles debe ocupar un espacio promedio de 8 metros cuadrados");
+        System.out.println("2do Mes: Colocar los pilones de cardamomo debajo de los árboles plantados hace 1 mes");
         Ciclos_Revision();
-        System.out.println("2do aÃ±o: Realizar estudio quÃ­mico de hoja");
-        System.out.println("2do aÃ±o, 15 dÃ­as: Consultar con un experto quÃ­mico o agronomo acerca de las necesidades del cultivo en funciÃ³n del estudio quÃ­mico");
+        System.out.println("2do año: Realizar estudio químico de hoja");
+        System.out.println("2do año, 15 días: Consultar con un experto químico o agronomo acerca de las necesidades del cultivo en función del estudio químico");
         
     }
-     //InformaciÃ³n de fechas para Frijol
+     //Información de fechas para Frijol
     public void Frijol(){
-        System.out.println("DÃ­a 23: Comprar los frijoles, para sembrar");
-        System.out.printlm("IMPORTANTE: Se recomienda haber plantado anteriormente maÃ­z, de esta forma existirÃ¡n soportes para el frijol");
+        System.out.println("Día 23: Comprar los frijoles, para sembrar");
+        System.out.println("IMPORTANTE: Se recomienda haber plantado anteriormente maíz, de esta forma existirán soportes para el frijol");
         Ciclos_Revision();
-        System.out.println("1er semestre: Realizar estudio quÃ­mico de hoja");
-        System.out.println("1er semestre, 15 dÃ­as: Consultar con un experto quÃ­mico o agronomo acerca de las necesidades del cultivo en funciÃ³n del estudio quÃ­mico");
+        System.out.println("1er semestre: Realizar estudio químico de hoja");
+        System.out.println("1er semestre, 15 días: Consultar con un experto químico o agronomo acerca de las necesidades del cultivo en función del estudio químico");
     }
-     //InformaciÃ³n de fechas para CaÃ±a
+     //Información de fechas para Caña
     public void Cana(){
-        System.out.println("DÃ­a 23: Comprar los pilones de caÃ±a de azÃºcar, sembrar posteriormente");
-        System.out.println("DÃ­a 25: Regar el terreno con abundante agua");
+        System.out.println("Día 23: Comprar los pilones de caña de azúcar, sembrar posteriormente");
+        System.out.println("Día 25: Regar el terreno con abundante agua");
         Ciclos_Revision();
-        System.out.println("1er aÃ±o: Realizar estudio quÃ­mico de hoja");
-        System.out.println("1er aÃ±o, 15 dÃ­as: Consultar con un experto quÃ­mico o agronomo acerca de las necesidades del cultivo en funciÃ³n del estudio quÃ­mico");
-        System.out.println("IMPORTANTE: Reiniciar el ciclo de crecimiento para cada pilon cada 10 aÃ±os");    
+        System.out.println("1er año: Realizar estudio químico de hoja");
+        System.out.println("1er año, 15 días: Consultar con un experto químico o agronomo acerca de las necesidades del cultivo en función del estudio químico");
+        System.out.println("IMPORTANTE: Reiniciar el ciclo de crecimiento para cada pilon cada 10 años");    
     }
-     //InformaciÃ³n de fechas para MaÃ­z
+     //Información de fechas para Maíz
     public void Maiz(){
-        System.out.println("DÃ­a 23: Comprar los pilones de maÃ­z, sembrar posteriormente");
+        System.out.println("Día 23: Comprar los pilones de maíz, sembrar posteriormente");
         Ciclos_Revision();
         System.out.println("1er Semestre: Fin de periodo de crecimiento");
 
         
     }
-     //InformaciÃ³n de fechas para CafÃ©
+     //Información de fechas para Café
     public void Cafe(){
-        System.out.println("DÃ­a 23: Comprar los pilones de cafÃ©, sembrar posteriormente");
+        System.out.println("Día 23: Comprar los pilones de café, sembrar posteriormente");
         Ciclos_Revision();
-        System.out.println("4to aÃ±o: Fin de crecimiento, reiniciar ciclo");
+        System.out.println("4to año: Fin de crecimiento, reiniciar ciclo");
 
         
     }
-     //InformaciÃ³n de fechas para Limon
+     //Información de fechas para Limon
     public void Limon(){
-        System.out.println("DÃ­a 23: Comprar los pilones de limÃ³n, sembrar posteriormente");
-        System.out.println("DÃ­a 25: Regar el terreno con abundante agua");
+        System.out.println("Día 23: Comprar los pilones de limón, sembrar posteriormente");
+        System.out.println("Día 25: Regar el terreno con abundante agua");
         Ciclos_Revision();
-        System.out.println("2do aÃ±o: Realizar estudio quÃ­mico de hoja");
-        System.out.println("2do aÃ±o, 15 dÃ­as: Consultar con un experto quÃ­mico o agronomo acerca de las necesidades del cultivo en funciÃ³n del estudio quÃ­mico");
-        System.out.println("IMPORTANTE: Reiniciar el ciclo de crecimiento para cada pilon cada 10 aÃ±os");    
+        System.out.println("2do año: Realizar estudio químico de hoja");
+        System.out.println("2do año, 15 días: Consultar con un experto químico o agronomo acerca de las necesidades del cultivo en función del estudio químico");
+        System.out.println("IMPORTANTE: Reiniciar el ciclo de crecimiento para cada pilon cada 10 años");    
         
     }
-     //InformaciÃ³n de fechas para Tomate
+     //Información de fechas para Tomate
     public void Tomate(){
-        System.out.println("DÃ­a 23: Montar carpas, para mayor rendimiento y evasiÃ³n de plagas");
-        System.out.println("DÃ­a 26: Comprar las semillas de tomate");
-        System.out.println("DÃ­a 27: Configurar sistemas de riego");
+        System.out.println("Día 23: Montar carpas, para mayor rendimiento y evasión de plagas");
+        System.out.println("Día 26: Comprar las semillas de tomate");
+        System.out.println("Día 27: Configurar sistemas de riego");
         Ciclos_Revision();
        
         
     }
-     //InformaciÃ³n de fechas para Papa
+     //Información de fechas para Papa
     public void Papa(){
         Ciclos_Revision();
         
     }
-     //InformaciÃ³n de fechas para Chile
+     //Información de fechas para Chile
     public void Chile(){
         Ciclos_Revision();
         
     }
-     //InformaciÃ³n de fechas para GÃ¼isquil
+     //Información de fechas para Güisquil
     public void Guisquil(){
         Ciclos_Revision();
         
     }
-     //InformaciÃ³n de fechas para GÃ¼icoy
+     //Información de fechas para Güicoy
     public void Guicoy(){
         Ciclos_Revision();
         
     }
-     //InformaciÃ³n de fechas para Yuca
+     //Información de fechas para Yuca
     public void Yuca(){
         Ciclos_Revision();
         
     }
-     //InformaciÃ³n de fechas para Aguacate
+     //Información de fechas para Aguacate
     public void Aguacate(){
         Ciclos_Revision();
         
     }
-     //InformaciÃ³n de fechas para Rabano
+     //Información de fechas para Rabano
     public void Rabano(){
         Ciclos_Revision();
         
     }
-     //InformaciÃ³n de fechas para Remolacha
+     //Información de fechas para Remolacha
     public void Remolacha(){
         Ciclos_Revision();
         
     }
-     //InformaciÃ³n de fechas para Cebolla
+     //Información de fechas para Cebolla
     public void Cebolla(){
         Ciclos_Revision();
         
