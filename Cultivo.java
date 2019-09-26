@@ -38,126 +38,128 @@ public class Cultivo{
 
 
 	//Muetra cultivo de acuerdo al clima y el departamento
-	public void mostrarCultivo(String clima, String departamento){
+	public String mostrarCultivo(String clima, String departamento){
 	if(clima.equalsIgnoreCase("Calido")){
 		if(departamento.equalsIgnoreCase("Peten")){
-			System.out.println("El cultivo que mejor se asimila a su situacion es el frijol");
 			cultivo = "frijol";
+			return cultivo;
 		}
 		else if(departamento.equalsIgnoreCase("Retalhuleu")){
-			System.out.println("El cultivo que mejor se asimila a su situacion es la cana de azucar");
 			cultivo = "cana";
+			return cultivo;
 		}
 		else if(departamento.equalsIgnoreCase("Suchitepequez")){
-			System.out.println("El cultivo que mejor se asimila a su situacion es la cana de azucar");
 			cultivo = "cana";
+			return cultivo;
 		}
 		else if(departamento.equalsIgnoreCase("Escuintla")){
-			System.out.println("El cultivo que mejor se asimila a su situacion es la cana de azucar");
 			cultivo = "cana";
+			return cultivo;
 		}
 		else if(departamento.equalsIgnoreCase("Santa Rosa")){
-			System.out.println("El cultivo que mejor se asimila a su situacion es la cana de azucar");
 			cultivo = "cana";
+			return cultivo;
 		}
 		else if(departamento.equalsIgnoreCase("Jutiapa")){
-			System.out.println("El cultivo que mejor se asimila a su situacion es el frijol");
 			cultivo = "frijol";
+			return cultivo;
 		}
 		else if(departamento.equalsIgnoreCase("Quiche")){
-			System.out.println("El cultivo que mejor se asimila a su situacion es el aguacate");
 			cultivo = "aguacate";
+			return cultivo;
 		}
 		else if(departamento.equalsIgnoreCase("Alta Verapaz")){
-			System.out.println("El cultivo que mejor se asimila a su situacion es el cardamomo");
 			cultivo = "cardamomo";
+			return cultivo;
 		}
 		else if(departamento.equalsIgnoreCase("Izabal")){
-			System.out.println("El cultivo que mejor se asimila a su situacion es el maiz blanco");
 			cultivo = "maiz";
+			return cultivo;
 		}
 	}
 	else if(clima.equalsIgnoreCase("Templado")){
 		if(departamento.equalsIgnoreCase("Huehuetenango")){
-			System.out.println("El cultivo que mejor se asimila a su situacion es el cafe");
 			cultivo = "cafe";
+			return cultivo;
 		}
 		else if(departamento.equalsIgnoreCase("Quiche")){
-			System.out.println("El cultivo que mejor se asimila a su situacion es el guisquil");
 			cultivo = "guisquil";
+			return cultivo;
 		}
 		else if(departamento.equalsIgnoreCase("Alta Verapaz")){
-			System.out.println("El cultivo que mejor se asimila a su situacion es el cafe");
 			cultivo = "cafe";
+			return cultivo;
 		}
 		else if(departamento.equalsIgnoreCase("San Marcos")){
-			System.out.println("El cultivo que mejor se asimila a su situacion es el cafe");
 			cultivo = "Cafe";
+			return cultivo;
 		}
 		else if(departamento.equalsIgnoreCase("Baja Verapaz")){
-			System.out.println("El cultivo que mejor se asimila a su situacion es el tomate");
 			cultivo = "Tomate";
+			return cultivo;
 		}
 		else if(departamento.equalsIgnoreCase("El Progreso")){
-			System.out.println("El cultivo que mejor se asimila a su situacion es el guicoy");
 			cultivo = "Guicoy";
+			return cultivo;
 		}
 		else if(departamento.equalsIgnoreCase("Guatemala")){
-			System.out.println("El cultivo que mejor se asimila a su situacion es el cafe");
 			cultivo = "cafe";
+			return cultivo;
 		}
 		else if(departamento.equalsIgnoreCase("Jalapa")){
-			System.out.println("El cultivo que mejor se asimila a su situacion es la yuca");
 			cultivo = "yuca";
+			return cultivo;
 		}
 		else if(departamento.equalsIgnoreCase("Escuintla")){
-			System.out.println("El cultivo que mejor se asimila a su situacion es el limon");
 			cultivo = "limon";
+			return cultivo;
 		}
 		else if(departamento.equalsIgnoreCase("Suchitepequez")){
-			System.out.println("El cultivo que mejor se asimila a su situacion es el limon");
 			cultivo = "limon";
+			return cultivo;
 		}
 	}
 	else if(clima.equalsIgnoreCase("Frio")){
 		if(departamento.equalsIgnoreCase("Huehuetenango")){
-			System.out.println("El cultivo que mejor se asimila a su situacion es el maiz blanco");
 			cultivo = "maiz";
+			return cultivo;
 		}
 		else if(departamento.equalsIgnoreCase("Quiche")){
-			System.out.println("El cultivo que mejor se asimila a su situacion es el aguacate");
 			cultivo = "aguacate";
+			return cultivo;
 		}
 		else if(departamento.equalsIgnoreCase("San Marcos")){
-			System.out.println("El cultivo que mejor se asimila a su situacion es el maiz blanco");
 			cultivo = "maiz";
+			return cultivo;
 		}
 		else if(departamento.equalsIgnoreCase("Quetzaltenango")){
-			System.out.println("El cultivo que mejor se asimila a su situacion es la papa");
 			cultivo = "papa";
+			return cultivo;
 		}
 		else if(departamento.equalsIgnoreCase("Totonicapan")){
-			System.out.println("El cultivo que mejor se asimila a su situacion es la cebolla");
 			cultivo = "cebolla";
+			return cultivo;
 		}
 		else if(departamento.equalsIgnoreCase("Solola")){
-			System.out.println("El cultivo que mejor se asimila a su situacion es el cafe");
 			cultivo = "cafe";
+			return cultivo;
 		}
 		else if(departamento.equalsIgnoreCase("Chimaltenango")){
-			System.out.println("El cultivo que mejor se asimila a su situacion es el rabano");
 			cultivo = "rabano";
+			return cultivo;
 		}
 		else if(departamento.equalsIgnoreCase("Sacatepequez")){
-			System.out.println("El cultivo que mejor se asimila a su situacion es la remolacha");
+			cultivo = "remolacha";
+			return cultivo;
 		}
 		else if(departamento.equalsIgnoreCase("Guatemala")){
-			System.out.println("El cultivo que mejor se asimila a su situacion es el chile");
 			cultivo = "chile";
+			return cultivo;
 		}
 	}
-
+	return " ";
 	}
+	
 
 	public String getClima(){
 		return climate;
