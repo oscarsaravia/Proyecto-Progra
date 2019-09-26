@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class agenda{
+public class Agenda{
 	
 	//ATRIBUTOS
 	private ArrayList<String[]> agenda = new ArrayList<String[]>();

@@ -5,6 +5,8 @@ public class Control{
 	Cultivo cultivo = new Cultivo();
 	Tutoriales tutos = new Tutoriales();
 	Calendario calendar=new Calendario();
+	Catalogo cat = new Catalogo();
+	//Agenda agen = new Agenda(); No implementado
 	String clima;
 	String departamento;
 	
@@ -120,6 +122,26 @@ public class Control{
 							tutos.verCebolla();
 						}
 	}
+
+	public String opcionCinco(){
+		return cat.getCatalogo();
+	}
+	/*No implementado
+	public String opcionSeis(){
+		return "Que desea hacer?\n 1. Desplegar agenda\n 2. Agregar contacto\n 3. Eliminar contacto";
+	}
+
+	public String seisParteDos(int opcion){
+		if(opcion == 1){
+			return agen.DesplegarAgenda();
+		}
+		else if(opcion ==2){
+			return agen.AgregarContacto();
+		}
+		else if(opcion == 3){
+			return agen.EliminarContacto();
+		}
+	}*/
 
 
 

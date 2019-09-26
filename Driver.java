@@ -10,7 +10,7 @@ public class Driver{
 		int opcion;
 
 		do{
-			System.out.println("Bienvenido\n Que desea hacer?\n 1. Conocer el cultivo que debe plantar\n 2. Calendario de su cultivo\n 3. Tutorial del cultivo\n 4. Salir");
+			System.out.println("Bienvenido\n Que desea hacer?\n 1. Conocer el cultivo que debe plantar\n 2. Calendario de su cultivo\n 3. Tutorial del cultivo\n 4. Salir\n 5. Listado de cultivos\n 6. Contactos");
 			opcion=scan.nextInt();
 			switch(opcion){
 				case 1:
@@ -46,6 +46,17 @@ public class Driver{
 				case 4:
 				System.out.println("\nGracias por utilizar los servicios, ha sido un gusto");
 				break;
+
+				case 5:
+				System.out.println(con.opcionCinco());
+				break;
+
+				/*case 6:
+				System.out.println(con.opcionSeis());
+				int caso = scan.nextInt();
+				scan.nextLine();
+				System.out.println(con.seisParteDos(caso));
+				break;*/ //No implementado
 			}
 		}
 		while(opcion!=4);
