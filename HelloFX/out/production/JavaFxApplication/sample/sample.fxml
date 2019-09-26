@@ -10,11 +10,11 @@
     <children>
         <AnchorPane prefHeight="325.0" prefWidth="250.0">
             <children>
-                <Button layoutX="36.0" layoutY="50.0" mnemonicParsing="false" prefHeight="20" prefWidth="250" onAction="#changeScreen" text="BIBLIOTECA DE CULTIVOS" />
-                <Button layoutX="36.0" layoutY="80.0" mnemonicParsing="false" prefHeight="20" prefWidth="250" text="¿QUÉ CULTIVO PUEDO TENER?" />
-                <Button layoutX="36.0" layoutY="110.0" mnemonicParsing="false" prefHeight="20" prefWidth="250" text="CALENDARIO DE ACTIVIDADES" />
-                <Button layoutX="36.0" layoutY="140.0" mnemonicParsing="false" prefHeight="20" prefWidth="250" text="TUTORIALES" />
-                <Button layoutX="36.0" layoutY="170.0" mnemonicParsing="false" prefHeight="20" prefWidth="250" text="CONTACTOS DE INTERÉS" />
+                <Button layoutX="36.0" layoutY="50.0" mnemonicParsing="false" prefHeight="20" prefWidth="250" onAction="#screenBiblioteca" text="BIBLIOTECA DE CULTIVOS" />
+                <Button layoutX="36.0" layoutY="80.0" mnemonicParsing="false" prefHeight="20" prefWidth="250" onAction="#screenCultivos" text="¿QUÉ CULTIVO PUEDO TENER?" />
+                <Button layoutX="36.0" layoutY="110.0" mnemonicParsing="false" prefHeight="20" prefWidth="250" onAction="#screenCalendario" text="CALENDARIO DE ACTIVIDADES" />
+                <Button layoutX="36.0" layoutY="140.0" mnemonicParsing="false" prefHeight="20" prefWidth="250" onAction="#screenTutoriales" text="TUTORIALES" />
+                <Button layoutX="36.0" layoutY="170.0" mnemonicParsing="false" prefHeight="20" prefWidth="250" onAction="#screenContactos" text="CONTACTOS DE INTERÉS" />
                 <Button layoutX="36.0" layoutY="200.0" mnemonicParsing="false" prefHeight="20" prefWidth="250" fx:id="closeButton" onAction="#closeButtonAction" text="SALIR" />
             </children>
         </AnchorPane>

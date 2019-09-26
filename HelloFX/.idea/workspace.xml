@@ -2,24 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/JavaFxApplication.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/JavaFxApplication/sample/Controller.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/JavaFxApplication/sample/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/JavaFxApplication/sample/sample.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/JavaFxApplication/sample/ventana2.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cultivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Cultivo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloFX.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HelloFX.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HelloFX/sample/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HelloFX/sample/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HelloFX/sample/Ventana2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaFxApplication/sample/Ventana2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HelloFX/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HelloFX/sample/sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/sample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaFxApplication.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaFxApplication.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaFxApplication/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaFxApplication/sample/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaFxApplication/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaFxApplication/sample/sample.fxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +83,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -135,8 +122,8 @@
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="sample.Main" />
-      <module name="HelloFX" />
-      <option name="VM_PARAMETERS" value="--module-path $USER_HOME$/Downloads/javafx-sdk-12.0.2/lib/ --add-modules javafx.controls,javafx.fxml" />
+      <module name="JavaFxApplication" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\oscar\Documents\UVG\2019\Segundo Semestre\Programación orientada a objetos\javafx-sdk-12.0.2\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="sample.*" />
