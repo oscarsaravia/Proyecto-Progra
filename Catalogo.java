@@ -5,7 +5,7 @@ public class Catalogo{
 
 	public String[] getCatalogo(){
 		String lista = "Los cultivos disponibles son:\n";
-		for(int i=0; i<15, i++){
+		for(int i=0; i<15; i++){
 			lista+= catalogo[i];
 			lista+= "\n";
 		}
