@@ -11,6 +11,7 @@ public class agenda{
 	private String Numtel;
 	private String Correo;
 	private String Empresa;
+	private int Opcioneliminar;
 	
 	Scanner scan = new Scanner(System.in);	
 	
@@ -56,7 +57,7 @@ public class agenda{
 		Numtel = scan.nextLine();
 		System.out.print("Ingrese el correo electronico del contacto: \n");
 		Correo = scan.nextLine();
-		System.out.print("ILugar de trabajo del contacto: \n");
+		System.out.print("Lugar de trabajo del contacto: \n");
 		Empresa = scan.nextLine();
 		
 		agenda.get(agenda.size()-1)[0] = Nombre;
@@ -64,6 +65,20 @@ public class agenda{
 		agenda.get(agenda.size()-1)[2] = Numtel;
 		agenda.get(agenda.size()-1)[3] = Correo;
 		agenda.get(agenda.size()-1)[4] = Empresa;
+		
+	}
+	public void EliminarContacto(){
+		System.out.print("POR FAVOR INGRESE EL NUMERO DE USUARIO QUE DESEA ELIMINAR...\n");
+		for (int i = 0; i < agenda.size(); i++){
+			System.out.print((i+1)+". "+ agenda.get(i)[0] + " " + agenda.get(i)[1]+ "\n");
+		}
+		Opcioneliminar = scan.nextInt();
+		if (Opcioneliminar == 1 || Opcioneliminar == 2){
+			System.out.print("Error: no puedes eliminar los contacots por defecto\n");
+		}
+		else{		
+			agenda.remove(num1-1);
+		}
 		
 	}
 }
