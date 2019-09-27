@@ -39,6 +39,7 @@ public class Agenda{
 	agenda.get(1)[3] = "carlitos@hotmail.com";
 	agenda.get(1)[4] = "Acma";
 	
+	//METODO PARA DESPLEGAR LA INFORMACION DE LOS CONTACTOS GUARDADOS
 	public void DesplegarAgenda(){
 		for (int i = 0; i < agenda.size(); i++){
 			for (int k = 0; k < agenda.get(i).length; k++){
@@ -47,6 +48,7 @@ public class Agenda{
 			System.out.print("\n");
 		}
 	}
+	//METODO QUE PERMITE AGREGAR UN CONTACOT
 	public void AgregarContacto(){
 		agenda.add(new String[5]);
 		System.out.print("Ingrese el nombre del contacto: \n");
@@ -67,6 +69,7 @@ public class Agenda{
 		agenda.get(agenda.size()-1)[4] = Empresa;
 		
 	}
+	//METODO CON LA FUNCION DE ELIMINAR USUARIOS DEL ARRAY
 	public void EliminarContacto(){
 		System.out.print("POR FAVOR INGRESE EL NUMERO DE USUARIO QUE DESEA ELIMINAR...\n");
 		for (int i = 0; i < agenda.size(); i++){
