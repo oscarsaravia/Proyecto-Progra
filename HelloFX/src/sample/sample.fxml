@@ -1,22 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane alignment="center" hgap="10" style="-fx-background-color: #228B22;" prefHeight="351.0" prefWidth="274.0" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sample.Controller">
+<GridPane alignment="center" prefHeight="351.0" prefWidth="274.0" style="-fx-background-color: #32CD32;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
     <children>
-        <AnchorPane prefHeight="325.0" prefWidth="250.0">
+        <AnchorPane prefHeight="38.0" prefWidth="298.0">
             <children>
-                <Button layoutX="36.0" layoutY="50.0" mnemonicParsing="false" prefHeight="20" prefWidth="250" onAction="#screenBiblioteca" text="BIBLIOTECA DE CULTIVOS" />
-                <Button layoutX="36.0" layoutY="80.0" mnemonicParsing="false" prefHeight="20" prefWidth="250" onAction="#screenCultivos" text="¿QUÉ CULTIVO PUEDO TENER?" />
-                <Button layoutX="36.0" layoutY="110.0" mnemonicParsing="false" prefHeight="20" prefWidth="250" onAction="#screenCalendario" text="CALENDARIO DE ACTIVIDADES" />
-                <Button layoutX="36.0" layoutY="140.0" mnemonicParsing="false" prefHeight="20" prefWidth="250" onAction="#screenTutoriales" text="TUTORIALES" />
-                <Button layoutX="36.0" layoutY="170.0" mnemonicParsing="false" prefHeight="20" prefWidth="250" onAction="#screenContactos" text="CONTACTOS DE INTERÉS" />
-                <Button layoutX="36.0" layoutY="200.0" mnemonicParsing="false" prefHeight="20" prefWidth="250" fx:id="closeButton" onAction="#closeButtonAction" text="SALIR" />
+            <ImageView fitHeight="215.0" fitWidth="298.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/bg.jpg" />
+               </image>
+            </ImageView>
+                <Button layoutX="24.0" layoutY="32.0" mnemonicParsing="false" onAction="#screenBiblioteca" prefHeight="20" prefWidth="250" text="BIBLIOTECA DE CULTIVOS" />
+                <Button layoutX="24.0" layoutY="62.0" mnemonicParsing="false" onAction="#screenCultivos" prefHeight="20" prefWidth="250" text="¿QUÉ CULTIVO PUEDO TENER?" />
+                <Button layoutX="24.0" layoutY="92.0" mnemonicParsing="false" onAction="#screenCalendario" prefHeight="20" prefWidth="250" text="CALENDARIO DE ACTIVIDADES" />
+                <Button layoutX="24.0" layoutY="122.0" mnemonicParsing="false" onAction="#screenTutoriales" prefHeight="20" prefWidth="250" text="TUTORIALES" />
+                <Button layoutX="24.0" layoutY="152.0" mnemonicParsing="false" onAction="#screenContactos" prefHeight="20" prefWidth="250" text="CONTACTOS DE INTERÉS" />
+                <Button fx:id="closeButton" layoutX="24.0" layoutY="182.0" mnemonicParsing="false" onAction="#closeButtonAction" prefHeight="20" prefWidth="250" text="SALIR" />
             </children>
         </AnchorPane>
     </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
 </GridPane>
