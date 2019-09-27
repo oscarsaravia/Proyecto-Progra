@@ -14,7 +14,10 @@ public class Driver{
 			opcion=scan.nextInt();
 			switch(opcion){
 				case 1:
-				System.out.println("En que clima esta ubicado?\n 1. Calido\n 2. Templado\n 3. Frio");
+				System.out.println("En que clima esta ubicado?\n"); 
+				System.out.print("1. Calido: presenta, a lo largo de todo el año, temperaturas elevadas. Se trata de un clima habitual en las sabanas, las selvas y los bosques tropicales.\n"); 
+				System.out.print("2. Templado: caracterizado por temperaturas medias anuales que rondan los 15 grados centigrados\n"); 
+				System.out.print("3. Frio: se caracteriza por mantener temperaturas bajas a lo largo del ano\n");
 				int clima = scan.nextInt();
 				System.out.println("En que departamento se encuentra?");
 				con.getDept(clima);
