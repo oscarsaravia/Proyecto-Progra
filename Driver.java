@@ -34,7 +34,7 @@ public class Driver{
 			System.out.println(con.devolverCultivo("Frio", departamento)+"\n \n");
 		}
 		do{
-			System.out.println("\nQue desea hacer?\n1. Conocer el cultivo que debe plantar\n2. Calendario de su cultivo\n3. Tutorial del cultivo\n4. Listado de cultivos\n5. Contactos\n6. Salir\n");
+			System.out.println("\nQue desea hacer?\n1. Conocer el cultivo que debe plantar\n2. Calendario de su cultivo\n3. Tutorial del cultivo\n4. Contactos\n5. Listado de cultivos\n6. Salir\n");
 			opcion=scan.nextInt();
 			switch(opcion){
 				case 1:
