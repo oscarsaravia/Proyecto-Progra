@@ -7,20 +7,67 @@ public class Driver{
 	public static void main(String[] args){
 		Scanner scan = new Scanner(System.in);
 		Control con = new Control();
-		int opcion;
+		int opcion = 0;
+		boolean banderainicio = true;
+		int clima = 0;
+		String departamento = "";
 
 		//Antes de entrar al ciclo, se hace la encuesta para siempre tener guardado un cultivo por lo menos
 		System.out.println("Bienvenido\nPara comenzar con el proceso se necesitara que conteste las siguientes preguntas");
 		System.out.println("En que clima esta ubicado?\n"); 
 		System.out.print("1. Calido: presenta, a lo largo de todo el año, temperaturas elevadas. Se trata de un clima habitual en las sabanas, las selvas y los bosques tropicales.\n"); 
 		System.out.print("2. Templado: caracterizado por temperaturas medias anuales que rondan los 15 grados centigrados\n"); 
-		System.out.print("3. Frio: se caracteriza por mantener temperaturas bajas a lo largo del ano\n");
-		int clima = scan.nextInt();
+		System.out.print("3. Frio: se caracteriza por mantener temperaturas bajas a lo largo del ano\n");	
+	
+		while(banderainicio == true){
+			try{
+				clima = scan.nextInt();
+				if(clima<= 3 && clima >=1){
+					banderainicio = false;
+				}
+				else{
+					System.out.println("Error: opcion invalida\n"
+					+ "Ingresa una opcion nuevamente");
+				}
+			}
+			catch(InputMismatchException e){
+				System.out.println("Error: opcion invalida\n"
+					+ "Ingresa una opcion nuevamente");
+				scan.next();
+			}
+		}
+		
+		
 		System.out.println("En que departamento se encuentra?");
 		con.getDept(clima);
 		System.out.println("");
 		scan.nextLine();
-		String departamento = scan.nextLine();
+		
+		
+		banderainicio = true;
+		while(banderainicio == true){
+			try{
+				departamento = scan.nextLine();
+				for(int i = 0; i < con.getlistadepartamentos(clima).length; i++){
+					if(con.getlistadepartamentos(clima)[i].equalsIgnoreCase(departamento)){
+						banderainicio = false;
+					}
+				}
+				if(banderainicio == true){
+					System.out.println("El departamento ingresado no se encuentra en las opciones\n"
+						+ "Ingrese el departamento nuevamente");
+				}
+			}
+			catch(InputMismatchException e){
+				System.out.println("El departamento ingresado no se encuentra en las opciones\n"
+					+ "Ingrese el departamento nuevamente");
+					scan.next();
+			}
+		}
+		
+		
+		
+		banderainicio = true;
 		if(clima == 1){
 			con.recibirCultivo("Calido", departamento);
 			System.out.println(con.devolverCultivo("Calido", departamento)+"\n \n");
@@ -35,19 +82,84 @@ public class Driver{
 		}
 		do{
 			System.out.println("\nQue desea hacer?\n1. Conocer el cultivo que debe plantar\n2. Calendario de su cultivo\n3. Tutorial del cultivo\n4. Contactos\n5. Listado de cultivos\n6. Salir\n");
-			opcion=scan.nextInt();
+			
+			banderainicio = true;
+			while(banderainicio == true){
+					try{
+						opcion = scan.nextInt();
+						if(opcion<= 6 && opcion >=1){
+							banderainicio = false;
+						}
+						else{
+							System.out.println("Error: opcion invalida\n"
+							+ "Ingresa una opcion nuevamente");
+						}
+					}
+					catch(InputMismatchException e){
+						System.out.println("Error: opcion invalida\n"
+							+ "Ingresa una opcion nuevamente");
+						scan.next();
+					}
+				}
+			
+			
+			
 			switch(opcion){
 				case 1:
 				System.out.println("En que clima esta ubicado?\n"); 
 				System.out.print("1. Calido: presenta, a lo largo de todo el año, temperaturas elevadas. Se trata de un clima habitual en las sabanas, las selvas y los bosques tropicales.\n"); 
 				System.out.print("2. Templado: caracterizado por temperaturas medias anuales que rondan los 15 grados centigrados\n"); 
 				System.out.print("3. Frio: se caracteriza por mantener temperaturas bajas a lo largo del ano\n");
-				clima = scan.nextInt();
+				
+				while(banderainicio == true){
+					try{
+						clima = scan.nextInt();
+						if(clima<= 3 && clima >=1){
+							banderainicio = false;
+						}
+						else{
+							System.out.println("Error: opcion invalida\n"
+							+ "Ingresa una opcion nuevamente");
+						}
+					}
+					catch(InputMismatchException e){
+						System.out.println("Error: opcion invalida\n"
+							+ "Ingresa una opcion nuevamente");
+						scan.next();
+					}
+				}
+				
+				
 				System.out.println("En que departamento se encuentra?");
 				con.getDept(clima);
 				System.out.println("");
 				scan.nextLine();
-				departamento = scan.nextLine();
+			
+				banderainicio = true;
+				while(banderainicio == true){
+					try{
+						departamento = scan.nextLine();
+						for(int i = 0; i < con.getlistadepartamentos(clima).length; i++){
+							if(con.getlistadepartamentos(clima)[i].equalsIgnoreCase(departamento)){
+								banderainicio = false;
+							}
+						}
+						if(banderainicio == true){
+							System.out.println("El departamento ingresado no se encuentra en las opciones\n"
+							+ "Ingrese el departamento nuevamente");
+						}
+					}
+					catch(InputMismatchException e){
+						System.out.println("El departamento ingresado no se encuentra en las opciones\n"
+							+ "Ingrese el departamento nuevamente");
+							scan.next();
+					}
+				}
+			
+			
+			
+			
+			
 				if(clima == 1){
 					con.recibirCultivo("Calido", departamento);
 					System.out.println(con.devolverCultivo("Calido", departamento)+"\n \n");

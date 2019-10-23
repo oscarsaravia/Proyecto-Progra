@@ -85,7 +85,7 @@ public class Agenda{
 			System.out.print("Error: no puedes eliminar los contacots por defecto\n");
 		}
 		else{		
-			agenda.remove(num1-1);
+			agenda.remove(Opcioneliminar-1);
 		}
 		
 	}

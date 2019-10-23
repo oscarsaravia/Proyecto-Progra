@@ -9,6 +9,7 @@ public class Cultivo{
 	private String[] calido = {"Peten", "Retalhuleu", "Suchitepequez", "Escuintla", "Santa Rosa", "Jutiapa", "Quiche", "Alta Verapaz", "Izabal"};
 	private String[] templado = {"Huehuetenango", "Quiche", "Alta Verapaz", "San Marcos", "Baja Verapaz", "El Progreso", "Guatemala", "Jalapa", "Escuintla", "Suchitepequez"};
 	private String[] frio = {"Huehuetenango", "Quiche", "San Marcos", "Quetzaltenango", "Totonicapan", "Solola", "Chimaltenango", "Sacatepequez", "Guatemala"};
+	private String[] devolverdepartamento;
 
 	//Constructor de cultivo
 	public void generarCultivo(String climate, String departamento){
@@ -175,5 +176,18 @@ public class Cultivo{
 	}
 	public String getDepartamento() {
 		return departamento;
+	}
+	
+	public String[] getdepartamentos(int opcion){
+		if(opcion == 1){
+			devolverdepartamento = calido;
+		}
+		else if(opcion == 2){
+			devolverdepartamento = templado;
+		}
+		else if(opcion == 3){
+			devolverdepartamento = frio;
+		}
+		return devolverdepartamento;
 	}
 }

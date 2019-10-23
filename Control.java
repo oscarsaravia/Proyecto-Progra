@@ -9,6 +9,7 @@ public class Control{
 	//Agenda agen = new Agenda(); No implementado
 	String clima;
 	String departamento;
+	String [] listadepas;
 	
 
 
@@ -121,6 +122,11 @@ public class Control{
 						else if(cultivo.getCultivo().equalsIgnoreCase("cebolla")) {
 							tutos.verCebolla();
 						}
+	}
+	
+	public String[] getlistadepartamentos(int opcion){
+		listadepas = cultivo.getdepartamentos(opcion);
+		return listadepas;
 	}
 
 	public String opcionCinco(){
