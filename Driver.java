@@ -12,6 +12,8 @@ public class Driver{
 		int clima = 0;
 		String departamento = "";
 
+		con.crearAgenda();
+
 		//Antes de entrar al ciclo, se hace la encuesta para siempre tener guardado un cultivo por lo menos
 		System.out.println("Bienvenido\nPara comenzar con el proceso se necesitara que conteste las siguientes preguntas");
 		System.out.println("En que clima esta ubicado?\n"); 
@@ -182,12 +184,35 @@ public class Driver{
 				con.opcionTres();
 				break;
 
-				/*case 4:
-				System.out.println(con.opcionSeis());
+				case 4:
+				System.out.println("Que desea hacer?\n1. Mostrar agenda\n2. Agregar contacto\n3. Eliminar contacto\n");
 				int caso = scan.nextInt();
 				scan.nextLine();
-				System.out.println(con.seisParteDos(caso));
-				break;*/ //No implementado
+				if(caso == 1){
+					System.out.println(con.mostrarAgenda());
+				}else if(caso == 2){
+					System.out.println("Ingrese el nombre del contacto: \n");
+					String name = scan.nextLine();
+					System.out.println("Ingrese el apellido del contacto: \n");
+					String lname = scan.nextLine();
+					System.out.println("Ingrese el numero de telefono del contacto: \n");
+					String numtel = scan.nextLine();
+					System.out.println("Ingrese el correo electronico del contacto: \n");
+					String mail = scan.nextLine();
+					System.out.println("Lugar de trabajo del contacto: \n");
+					String job = scan.nextLine();
+					scan.nextLine();
+					con.agregarContacto(name, lname, numtel, mail, job);
+				}else if(caso == 3){
+					System.out.println("POR FAVOR INGRESE EL NUMERO DE USUARIO QUE DESEA ELIMINAR...\n");
+					System.out.println(con.mostrarAgenda());
+					int pos = scan.nextInt();
+					scan.nextLine();
+					System.out.println(con.eliminarContacto(pos));
+				}else{
+					System.out.println("Opcion ingresada no valida");
+				}
+				break;
 
 				case 5:
 				System.out.println(con.opcionCinco());

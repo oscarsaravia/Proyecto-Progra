@@ -45,47 +45,42 @@ public class Agenda{
 	}
 	
 	//METODO PARA DESPLEGAR LA INFORMACION DE LOS CONTACTOS GUARDADOS
-	public void DesplegarAgenda(){
+	public String desplegarAgenda(){
+		String age = ""; 
 		for (int i = 0; i < agenda.size(); i++){
+			age+= (i+1);
+			age += ".\n";
 			for (int k = 0; k < agenda.get(i).length; k++){
-				System.out.print(Datos[k] + agenda.get(i)[k]+" \n");
+				age += Datos[k] + agenda.get(i)[k]+" \n";
 			}
-			System.out.print("\n");
+			age += "\n";
 		}
+		return age;
 	}
 	//METODO QUE PERMITE AGREGAR UN CONTACOT
-	public void AgregarContacto(){
-		agenda.add(new String[5]);
-		System.out.print("Ingrese el nombre del contacto: \n");
-		Nombre = scan.nextLine();
-		System.out.print("Ingrese el apellido del contacto: \n");
-		Apellido = scan.nextLine();
-		System.out.print("Ingrese el numero de telefono del contacto: \n");
-		Numtel = scan.nextLine();
-		System.out.print("Ingrese el correo electronico del contacto: \n");
-		Correo = scan.nextLine();
-		System.out.print("Lugar de trabajo del contacto: \n");
-		Empresa = scan.nextLine();
+	public void agregarContacto(String nombre, String apellido, String numtel, String correo, String empresa){
 		
-		agenda.get(agenda.size()-1)[0] = Nombre;
-		agenda.get(agenda.size()-1)[1] = Apellido;
-		agenda.get(agenda.size()-1)[2] = Numtel;
-		agenda.get(agenda.size()-1)[3] = Correo;
-		agenda.get(agenda.size()-1)[4] = Empresa;
+		agenda.add(new String[5]);
+		
+		
+		agenda.get(agenda.size()-1)[0] = nombre;
+		agenda.get(agenda.size()-1)[1] = apellido;
+		agenda.get(agenda.size()-1)[2] = numtel;
+		agenda.get(agenda.size()-1)[3] = correo;
+		agenda.get(agenda.size()-1)[4] = empresa;
 		
 	}
 	//METODO CON LA FUNCION DE ELIMINAR USUARIOS DEL ARRAY
-	public void EliminarContacto(){
-		System.out.print("POR FAVOR INGRESE EL NUMERO DE USUARIO QUE DESEA ELIMINAR...\n");
-		for (int i = 0; i < agenda.size(); i++){
-			System.out.print((i+1)+". "+ agenda.get(i)[0] + " " + agenda.get(i)[1]+ "\n");
-		}
-		Opcioneliminar = scan.nextInt();
-		if (Opcioneliminar == 1 || Opcioneliminar == 2){
-			System.out.print("Error: no puedes eliminar los contacots por defecto\n");
+	public String eliminarContacto(int posicion){
+		String eliminacion = "";
+		
+		if (posicion == 1 || posicion == 2){
+			eliminacion += "Error: no puedes eliminar los contactos por defecto\n";
+			return eliminacion;
 		}
 		else{		
-			agenda.remove(Opcioneliminar-1);
+			agenda.remove(posicion-1);
+			return eliminacion;
 		}
 		
 	}

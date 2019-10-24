@@ -6,7 +6,7 @@ public class Control{
 	Tutoriales tutos = new Tutoriales();
 	Calendario calendar=new Calendario();
 	Catalogo cat = new Catalogo();
-	//Agenda agen = new Agenda(); No implementado
+	Agenda agen = new Agenda(); 
 	String clima;
 	String departamento;
 	String [] listadepas;
@@ -20,6 +20,11 @@ public class Control{
 	public void recibirCultivo(String clima, String departamento){
 		this.clima = clima;
 		this.departamento = departamento;
+	}
+
+	public void crearAgenda(){
+		agen.iniciaragenda();
+		agen.agregardatos();
 	}
 
 	public String devolverCultivo(String clima, String departamento){
@@ -132,22 +137,19 @@ public class Control{
 	public String opcionCinco(){
 		return cat.getCatalogo();
 	}
-	/*No implementado
-	public String opcionSeis(){
-		return "Que desea hacer?\n 1. Desplegar agenda\n 2. Agregar contacto\n 3. Eliminar contacto";
+	
+	public String mostrarAgenda(){
+		return agen.desplegarAgenda();
 	}
 
-	public String seisParteDos(int opcion){
-		if(opcion == 1){
-			return agen.DesplegarAgenda();
-		}
-		else if(opcion ==2){
-			return agen.AgregarContacto();
-		}
-		else if(opcion == 3){
-			return agen.EliminarContacto();
-		}
-	}*/
+	public void agregarContacto(String nombre, String apellido, String numtel, String correo, String empresa){
+		agen.agregarContacto(nombre, apellido, numtel, correo, empresa);
+	}
+
+	public String eliminarContacto(int posicion){
+		return agen.eliminarContacto(posicion);
+	}
+	
 
 
 
