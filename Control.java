@@ -1,12 +1,15 @@
 /*Control.java
 */
 
+import java.util.*;
+
 public class Control{
 	Cultivo cultivo = new Cultivo();
 	Tutoriales tutos = new Tutoriales();
 	Calendario calendar=new Calendario();
 	Catalogo cat = new Catalogo();
 	Agenda agen = new Agenda(); 
+	Scanner scan = new Scanner(System.in);
 	String clima;
 	String departamento;
 	String [] listadepas;
@@ -41,9 +44,9 @@ public class Control{
 			System.out.println(cultivo.getCultivo());
 			System.out.println("_________________________");
 			calendar.MenuCalendarioDialogo();
-			int Scan = SC.nextInt();
-			calendar.MenuCalendario(Scan);
-		}while(Scan != 4);
+			int scanned = scan.nextInt();
+			calendar.MenuCalendario(scanned);
+		}while(scanned != 4);
 		
 
 	}
