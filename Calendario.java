@@ -1,7 +1,7 @@
 //Autor: Oliver Josué de León Milian
 //Clase: Calendario
 //PROYECTO "Terra Plus"
-//FUNCION DE CLASE
+//FUNCION DE CLASE:
 //Almacena todos los metodos que guardan dentro de si la informacion de cuido y progresion de cada uno 
 //de los cultivos.
 
