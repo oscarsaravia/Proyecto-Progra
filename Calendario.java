@@ -12,9 +12,11 @@ import java.util.Scanner;
 public class Calendario {
     //Embajadores de Clase
     Scanner SC = new Scanner(System.in);
+    Cultivo CT = new Cultivo();
     
     //_______________________________________________________________________________________________________________________
-    //Dialogos
+    //DIALOGOS DE LA OPCION CALENDARIO
+
     public void MenuCalendarioDialogo(){
         System.out.println("\n_____________________________________");
         System.out.println(" BIENVENIDO AL AREA DE CALENDARIO");
@@ -92,34 +94,7 @@ public class Calendario {
         Scan = SC.NextLine();
         
     }
-    
-    //_________________________________________________________________________________________________________________________
-    //Funciones Operacionales
-    
-    //Menu Principal de Calendario
-    public void MenuCalendario(int Opcion){
-        //DIALOGO DE MENU PRINCIPAL
-        MenuCalendarioDialogo();
-        //CALENDARIZACION DIARIA
-        if(Opcion == 1){
-            CalendarizacionProcesoBasico();
-        //CALENDARIZACION MENSUAL
-        }else if (Opcion == 2){
-            
-        //CALENDARIZACION ANUAL
-        }else if (Opcion == 3){
-            CalendarizacionAnualDialogo();
-        }
-    }
-  
 
-//Calendarización Básica de Revisión de ciclos de protección y analisis de cultivo    
-    public void Ciclos_Revision(){
-        for (int i = 3; i < 25; i++){
-            System.out.println(i+": Revisión mensual, para revisión de abono y suministro de agua");
-        }
-    }
-    
     //Información de fechas para Cardamomo}
     public void Cardamomo(){
         System.out.println("Día 23: Comprar los pilones de árbol, que servirán para sombra");
@@ -138,6 +113,7 @@ public class Calendario {
         System.out.println("1er semestre: Realizar estudio químico de hoja");
         System.out.println("1er semestre, 15 días: Consultar con un experto químico o agronomo acerca de las necesidades del cultivo en función del estudio químico");
     }
+
      //Información de fechas para Caña
     public void Cana(){
         System.out.println("Día 23: Comprar los pilones de caña de azúcar, sembrar posteriormente");
@@ -147,6 +123,7 @@ public class Calendario {
         System.out.println("1er año, 15 días: Consultar con un experto químico o agronomo acerca de las necesidades del cultivo en función del estudio químico");
         System.out.println("IMPORTANTE: Reiniciar el ciclo de crecimiento para cada pilon cada 10 años");    
     }
+
      //Información de fechas para Maíz
     public void Maiz(){
         System.out.println("Día 23: Comprar los pilones de maíz, sembrar posteriormente");
@@ -155,6 +132,7 @@ public class Calendario {
 
         
     }
+
      //Información de fechas para Café
     public void Cafe(){
         System.out.println("Día 23: Comprar los pilones de café, sembrar posteriormente");
@@ -163,6 +141,7 @@ public class Calendario {
 
         
     }
+
      //Información de fechas para Limon
     public void Limon(){
         System.out.println("Día 23: Comprar los pilones de limón, sembrar posteriormente");
@@ -173,6 +152,7 @@ public class Calendario {
         System.out.println("IMPORTANTE: Reiniciar el ciclo de crecimiento para cada pilon cada 10 años");    
         
     }
+
      //Información de fechas para Tomate
     public void Tomate(){
         System.out.println("Día 23: Montar carpas, para mayor rendimiento y evasión de plagas");
@@ -182,50 +162,176 @@ public class Calendario {
        
         
     }
+
      //Información de fechas para Papa
     public void Papa(){
+        System.out.println("Día 23: Comprar los pilones de papa");
+        System.out.println("IMPORTANTE: Tomar en cuenta que el tamaño de estos pilones debe ocupar un espacio promedio de 0.5 metros cuadrados");
         Ciclos_Revision();
-        
-    }
-     //Información de fechas para Chile
-    public void Chile(){
-        Ciclos_Revision();
-        
-    }
-     //Información de fechas para Güisquil
-    public void Guisquil(){
-        Ciclos_Revision();
-        
-    }
-     //Información de fechas para Güicoy
-    public void Guicoy(){
-        Ciclos_Revision();
-        
-    }
-     //Información de fechas para Yuca
-    public void Yuca(){
-        Ciclos_Revision();
-        
-    }
-     //Información de fechas para Aguacate
-    public void Aguacate(){
-        Ciclos_Revision();
-        
-    }
-     //Información de fechas para Rabano
-    public void Rabano(){
-        Ciclos_Revision();
-        
-    }
-     //Información de fechas para Remolacha
-    public void Remolacha(){
-        Ciclos_Revision();
-        
-    }
-     //Información de fechas para Cebolla
-    public void Cebolla(){
-        Ciclos_Revision();
+        System.out.println("2do año: Realizar estudio químico de hoja");
+        System.out.println("2do año, 15 días: Consultar con un experto químico o agronomo acerca de las necesidades del cultivo en función del estudio químico");
         
     }
 
+     //Información de fechas para Chile
+    public void Chile(){
+        System.out.println("Día 23: Comprar los pilones de chile, para evitar cuidades tediosos e intensivos");
+        System.out.println("IMPORTANTE: Tomar en cuenta que el tamaño de estos pilones variara en funcion del relieve del terreno");
+        System.out.println("2do Mes: Colocar los pilones bajo observacion");
+        Ciclos_Revision();
+        System.out.println("2do año: Realizar estudio químico de hoja");
+        System.out.println("2do año, 15 días: Consultar con un experto químico o agronomo acerca de las necesidades del cultivo en función del estudio químico");
+        
+    }
+
+     //Información de fechas para Güisquil
+    public void Guisquil(){
+        System.out.println("Día 23: Comprar los pilones de guisquil, y plantar junto a la enredadera");
+        System.out.println("IMPORTANTE: Tomar en cuenta que el tamaño de la cerca influenciara en el crecimiento del pilon");
+        Ciclos_Revision();
+        System.out.println("2do año: Realizar estudio químico de hoja");
+        System.out.println("2do año, 15 días: Consultar con un experto químico o agronomo acerca de las necesidades del cultivo en función del estudio químico");
+        
+    }
+
+     //Información de fechas para Güicoy
+    public void Guicoy(){
+        System.out.println("Día 23: Comprar los pilones de guicoy");
+        System.out.println("IMPORTANTE: Un riego desmedido puede echar a perder la siembra");
+        System.out.println("2do Mes: Colocar los pilones en observacion");
+        Ciclos_Revision();
+        System.out.println("2do año: Realizar estudio químico de hoja");
+        System.out.println("2do año, 15 días: Consultar con un experto químico o agronomo acerca de las necesidades del cultivo en función del estudio químico");
+        
+    }
+
+     //Información de fechas para Yuca
+    public void Yuca(){
+        System.out.println("Día 23: Comprar los pilones de Yuca");
+        System.out.println("IMPORTANTE: Tomar en cuenta que la yuca al ser raiz es propensa a los cambios de pH");
+        Ciclos_Revision();
+        System.out.println("2do año: Realizar estudio químico de hoja");
+        System.out.println("2do año, 15 días: Consultar con un experto químico o agronomo acerca de las necesidades del cultivo en función del estudio químico");
+        
+    }
+
+     //Información de fechas para Aguacate
+    public void Aguacate(){
+        System.out.println("Día 23: Comprar los pilones de árbol");
+        System.out.println("IMPORTANTE: Tomar en cuenta que el tamaño de estos árboles debe ocupar un espacio promedio de 8 metros cuadrados");
+        System.out.println("2do Mes: Colocar los pilones de aguacate en observacion 1 mes");
+        Ciclos_Revision();
+        System.out.println("2do año: Realizar estudio químico de hoja");
+        System.out.println("2do año, 15 días: Consultar con un experto químico o agronomo acerca de las necesidades del cultivo en función del estudio químico");
+        
+    }
+
+     //Información de fechas para Rabano
+    public void Rabano(){
+        System.out.println("Día 23: Comprar los pilones de rabano");
+        System.out.println("IMPORTANTE: Tomar en cuenta que el pH variante del agua y tierra");
+        Ciclos_Revision();
+        System.out.println("2do año: Realizar estudio químico de hoja");
+        System.out.println("2do año, 15 días: Consultar con un experto químico o agronomo acerca de las necesidades del cultivo en función del estudio químico");
+        
+    }
+
+     //Información de fechas para Remolacha
+    public void Remolacha(){
+        System.out.println("Día 23: Comprar los pilones de remolacha");
+        System.out.println("IMPORTANTE: Requiere de humedad progresiva");
+        System.out.println("2do Mes: Colocar los pilones bajo estudio de humedad y pH");
+        Ciclos_Revision();
+        System.out.println("2do año: Realizar estudio químico de hoja");
+        System.out.println("2do año, 15 días: Consultar con un experto químico o agronomo acerca de las necesidades del cultivo en función del estudio químico");
+        
+    }
+
+     //Información de fechas para Cebolla
+    public void Cebolla(){
+        System.out.println("Día 23: Comprar los pilones de cebolla");
+        System.out.println("IMPORTANTE: Consultar a un experto en cuanto al abono del cultivo");
+        Ciclos_Revision();
+        System.out.println("2do año: Realizar estudio químico de hoja");
+        System.out.println("2do año, 15 días: Consultar con un experto químico o agronomo acerca de las necesidades del cultivo en función del estudio químico");
+        
+    }
+    
+    //_________________________________________________________________________________________________________________________
+    //FUNCIONES OPERACIONALES
+    
+    //Menu Principal de Calendario
+    public void MenuCalendario(int Opcion){
+       
+        //CALENDARIZACION DIARIA
+        if(Opcion == 1){
+            CalendarizacionProcesoBasico();
+        //CALENDARIZACION MENSUAL
+        }else if (Opcion == 2){
+            CalendarioCultivos(CT.getCultivo());
+        //CALENDARIZACION ANUAL
+        }else if (Opcion == 3){
+            CalendarizacionAnualDialogo();
+        }
+    }
+  
+//Calendarización Básica de Revisión de ciclos de protección y analisis de cultivo    
+    public void Ciclos_Revision(){
+        for (int i = 3; i < 25; i++){
+            String Scan = "";
+            System.out.println(i+": Revisión mensual, para revisión de abono y suministro de agua");
+            System.out.println("PRESIONE [ENTER] PARA CONTINUAR");
+            Scan = SC.NextLine();
+        }
+    }
+    
+    // CONDICIONALES PARA CALENDARIO DE CULTIVOS
+
+    public void CalendarioCultivos(String Cultivo){
+        if(Cultivo.equalsIgnoreCase("cardamomo")) {
+			Cardamomo();
+		}
+		else if(Cultivo.equalsIgnoreCase("frijol")) {
+			Frijol();
+		}
+		else if(Cultivo.equalsIgnoreCase("maiz")) {
+			Maiz();
+		}
+		else if(Cultivo.equalsIgnoreCase("cafe")) {
+			Cafe();
+		}
+		else if(Cultivo.equalsIgnoreCase("limon")) {
+			Limon();
+		}
+		else if(Cultivo.equalsIgnoreCase("tomate")) {
+			Tomate();
+		}
+		else if(Cultivo.equalsIgnoreCase("papa")){
+			Papa();
+		}
+		else if(Cultivo.equalsIgnoreCase("chile")) {
+			Chile();
+		}
+		else if(Cultivo.equalsIgnoreCase("guisquil")) {
+			Guisquil();
+		}
+		else if(Cultivo.equalsIgnoreCase("guicoy")) {
+			Guicoy();
+		}
+		else if(Cultivo.equalsIgnoreCase("yuca")) {
+			Yuca();
+		}
+		else if(Cultivo.equalsIgnoreCase("aguacate")) {
+			Aguacate();
+		}
+		else if(Cultivo.equalsIgnoreCase("rabano")) {
+			Rabano();
+		}
+		else if(Cultivo.equalsIgnoreCase("remolacha")) {
+			Remolacha();
+		}
+		else if(Cultivo.equalsIgnoreCase("cebolla")) {
+			Cebolla();
+		}
+    }
 }
