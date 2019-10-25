@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class Calendario {
     //Embajadores de Clase
-    Scanner SC = new Scanner(System.in);
+    Scanner sc = new Scanner(System.in);
     Cultivo CT = new Cultivo();
     
     //_______________________________________________________________________________________________________________________
@@ -29,69 +29,69 @@ public class Calendario {
     }  
     //Calendarización Básica de los Cultivos
     public void CalendarizacionProcesoBasico(){
-        String Scanner = "";
+        String input = "";
         System.out.println("\n____________________________________");
-        System.out.println(" CALENDARIZACIÓN DE PROCESO BÁSICO");
+        System.out.println(" CALENDARIZACIÓN DE PROCESO BASICO");
         System.out.println("____________________________________");
         
         //DIA 1
         System.out.println("\nDía 1: Realizar muestreos químicos del terreno (Consultar el apartado de contactos)");
         System.out.println("PRESIONE [ENTER] PARA CONTINUAR");
-        Scanner = SC.NextLine();
+        input = sc.nextLine();
         System.out.println("\nDía 1: Realizar muestreos químicos del agua potable (Consultar el apartado de contactos)");
         System.out.println("PRESIONE [ENTER] PARA CONTINUAR");
-        Scanner = SC.NextLine();
+        input = sc.nextLine();
         //DIA 10
         System.out.println("\nDía 10: Recoger resultados del muestreo químico");
         System.out.println("PRESIONE [ENTER] PARA CONTINUAR");
-        Scanner = SC.NextLine();
+        input = sc.nextLine();
         //DIA 11
         System.out.println("\nDía 11: Comentar con un experto químico o agronomo los resultados obtenidos (Consultar el apartado de contactos)");
         System.out.println("PRESIONE [ENTER] PARA CONTINUAR");
-        Scanner = SC.NextLine();
+        input = sc.nextLine();
         //DIA 15
         System.out.println("\nDía 15: Comenzar la labor de limpieza del terreno (Extracción de malas hierbas y plantación de árboles de sombra)");
         System.out.println("PRESIONE [ENTER] PARA CONTINUAR");
-        Scanner = SC.NextLine();
+        input = sc.nextLine();
         //DIA 17
         System.out.println("\nDía 17: Comprar el abono sugerido por el programa, o el sugerido por el experto al que ha consultado (Consultar el apartado de contactos)");
         System.out.println("PRESIONE [ENTER] PARA CONTINUAR");
-        Scanner = SC.NextLine();
+        input = sc.nextLine();
         //DIA 19
         System.out.println("\nDía 19: Comenzar los arreglos químicos, que puedan resolver el estado químico desequilibrado del agua o la tierra");
         System.out.println("PRESIONE [ENTER] PARA CONTINUAR");
-        Scanner = SC.NextLine();
+        input = sc.nextLine();
         //DIA 21
         System.out.println("\nDía 21: Crear un depósito de agua, si hay un pre-existente, asegurarse de ubicarlo al menos a 2.5 metros de altura");
         System.out.println("PRESIONE [ENTER] PARA CONTINUAR");
-        Scanner = SC.NextLine();
+        input = sc.nextLine();
         //DIA 22
         System.out.println("\nDía 22: Crear un sistema de riego proveniente del depósito de agua, la altura permitirá mitigar el uso de una bomba de presión");
         System.out.println("PRESIONE [ENTER] PARA CONTINUAR");
-        Scanner = SC.NextLine();
+        input = sc.nextLine();
         //OTROS
         System.out.println("\nSi se requiriera una bomba de agua, puede consultar el apartado de contactos");
         System.out.println("PRESIONE [ENTER] PARA CONTINUAR");
-        Scanner = SC.NextLine();
+        input = sc.nextLine();
     }
     //CALENDARIZACION ANUAL
     public void CalendarizacionAnualDialogo(){
-        String Scan = "";
+        String entrada = "";
         System.out.println("\n____________________________________");
         System.out.println("       CALENDARIZACION ANUAL");
         System.out.println("____________________________________");
         //1ER AÑO
         System.out.println("\n1ER ) MANTENER LOS PROCESOS ORDINALES");
         System.out.println("PRESIONE [ENTER] PARA CONTINUAR");
-        Scan = SC.NextLine();
+        entrada = sc.nextLine();
         //2DO AÑO
         System.out.println("\n2DO ) REALIZAR ESTUDIO DE HOJA");
         System.out.println("PRESIONE [ENTER] PARA CONTINUAR");
-        Scan = SC.NextLine();
+        entrada = sc.nextLine();
         //6TO AÑO
         System.out.println("\n6TO) RENOVAR CULTIVO Y MANTENER CICLOS NUEVAMENTE");
         System.out.println("PRESIONE [ENTER] PARA CONTINUAR");
-        Scan = SC.NextLine();
+        entrada = sc.nextLine();
         
     }
 
@@ -279,10 +279,10 @@ public class Calendario {
 //Calendarización Básica de Revisión de ciclos de protección y analisis de cultivo    
     public void Ciclos_Revision(){
         for (int i = 3; i < 25; i++){
-            String Scan = "";
+            String in = "";
             System.out.println(i+": Revisión mensual, para revisión de abono y suministro de agua");
             System.out.println("PRESIONE [ENTER] PARA CONTINUAR");
-            Scan = SC.NextLine();
+            in = sc.nextLine();
         }
     }
     // CONDICIONALES PARA CALENDARIO DE CULTIVOS

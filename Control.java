@@ -38,13 +38,13 @@ public class Control{
 
 	//OPCION CALENDARIO
 	public void OperacionesCalendario(){
-
+		int scanned = 0;
 		do{
 			System.out.println("\n__________________________");
 			System.out.println(cultivo.getCultivo());
 			System.out.println("_________________________");
 			calendar.MenuCalendarioDialogo();
-			int scanned = scan.nextInt();
+			scanned = scan.nextInt();
 			calendar.MenuCalendario(scanned);
 		}while(scanned != 4);
 		
