@@ -33,54 +33,26 @@ public class Control{
 		return r;
 	}
 
-	public void opcionDos(){
-		if(cultivo.getCultivo().equalsIgnoreCase("cardamomo")) {
-			calendar.Cardamomo();
-		}
-		else if(cultivo.getCultivo().equalsIgnoreCase("frijol")) {
-			calendar.Frijol();
-		}
-		else if(cultivo.getCultivo().equalsIgnoreCase("maiz")) {
-			calendar.Maiz();
-		}
-		else if(cultivo.getCultivo().equalsIgnoreCase("cafe")) {
-			calendar.Cafe();
-		}
-		else if(cultivo.getCultivo().equalsIgnoreCase("limon")) {
-			calendar.Limon();
-		}
-		else if(cultivo.getCultivo().equalsIgnoreCase("tomate")) {
-			calendar.Tomate();
-		}
-		else if(cultivo.getCultivo().equalsIgnoreCase("papa")){
-			calendar.Papa();
-		}
-		else if(cultivo.getCultivo().equalsIgnoreCase("chile")) {
-			calendar.Chile();
-		}
-		else if(cultivo.getCultivo().equalsIgnoreCase("guisquil")) {
-			calendar.Guisquil();
-		}
-						else if(cultivo.getCultivo().equalsIgnoreCase("guicoy")) {
-							calendar.Guicoy();
-						}
-						else if(cultivo.getCultivo().equalsIgnoreCase("yuca")) {
-							calendar.Yuca();
-						}
-						else if(cultivo.getCultivo().equalsIgnoreCase("aguacate")) {
-							calendar.Aguacate();
-						}
-						else if(cultivo.getCultivo().equalsIgnoreCase("rabano")) {
-							calendar.Rabano();
-						}
-						else if(cultivo.getCultivo().equalsIgnoreCase("remolacha")) {
-							calendar.Remolacha();
-						}
-						else if(cultivo.getCultivo().equalsIgnoreCase("cebolla")) {
-							calendar.Cebolla();
-						}
-	}
+	//OPCION CALENDARIO
+	public void OperacionesCalendario(){
 
+		do{
+			System.out.println("\n__________________________");
+			System.out.println(cultivo.getCultivo());
+			System.out.println("_________________________");
+			calendar.MenuCalendarioDialogo();
+			int Scan = SC.nextInt();
+			calendar.MenuCalendario(Scan);
+		}while(Scan != 4);
+		
+
+	}
+	//OPCION CALENDARIO
+	public void opcionDos(){
+		OperacionesCalendario();
+	}
+	
+	
 	public void opcionTres(){
 		if(cultivo.getCultivo().equalsIgnoreCase("cardamomo")) {
 							tutos.verCardamomo();
