@@ -9,7 +9,7 @@
 //Imports
 import java.util.Scanner;
 
-public class Calendario {
+public class Calendario implements General{
     //Embajadores de Clase
     Scanner sc = new Scanner(System.in);
     Cultivo CT = new Cultivo();

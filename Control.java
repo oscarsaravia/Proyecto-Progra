@@ -58,49 +58,49 @@ public class Control{
 	
 	public void opcionTres(){
 		if(cultivo.getCultivo().equalsIgnoreCase("cardamomo")) {
-							tutos.verCardamomo();
+							tutos.Cardamomo();
 						}
 						else if(cultivo.getCultivo().equalsIgnoreCase("frijol")) {
-							tutos.verFrijol();
+							tutos.Frijol();
 						}
 						else if(cultivo.getCultivo().equalsIgnoreCase("maiz")) {
-							tutos.verMaiz();
+							tutos.Maiz();
 						}
 						else if(cultivo.getCultivo().equalsIgnoreCase("cafe")) {
-							tutos.verCafe();
+							tutos.Cafe();
 						}
 						else if(cultivo.getCultivo().equalsIgnoreCase("limon")) {
-							tutos.verLimon();
+							tutos.Limon();
 						}
 						else if(cultivo.getCultivo().equalsIgnoreCase("tomate")) {
-							tutos.verTomate();
+							tutos.Tomate();
 						}
 						else if(cultivo.getCultivo().equalsIgnoreCase("papa")){
-							tutos.verPapa();
+							tutos.Papa();
 						}
 						else if(cultivo.getCultivo().equalsIgnoreCase("chile")) {
-							tutos.verChile();
+							tutos.Chile();
 						}
 						else if(cultivo.getCultivo().equalsIgnoreCase("guisquil")) {
-							tutos.verGuisquil();
+							tutos.Guisquil();
 						}
 						else if(cultivo.getCultivo().equalsIgnoreCase("guicoy")) {
-							tutos.verGuicoy();
+							tutos.Guicoy();
 						}
 						else if(cultivo.getCultivo().equalsIgnoreCase("yuca")) {
-							tutos.verYuca();
+							tutos.Yuca();
 						}
 						else if(cultivo.getCultivo().equalsIgnoreCase("aguacate")) {
-							tutos.verAguacate();
+							tutos.Aguacate();
 						}
 						else if(cultivo.getCultivo().equalsIgnoreCase("rabano")) {
-							tutos.verRabano();
+							tutos.Rabano();
 						}
 						else if(cultivo.getCultivo().equalsIgnoreCase("remolacha")) {
-							tutos.verRemolacha();
+							tutos.Remolacha();
 						}
 						else if(cultivo.getCultivo().equalsIgnoreCase("cebolla")) {
-							tutos.verCebolla();
+							tutos.Cebolla();
 						}
 	}
 	
