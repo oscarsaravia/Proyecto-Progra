@@ -105,7 +105,7 @@ public class Driver{
 				}
 			
 			
-			
+			banderainicio = true;
 			switch(opcion){
 				case 1:
 				System.out.println("En que clima esta ubicado?\n"); 
@@ -201,7 +201,6 @@ public class Driver{
 					String mail = scan.nextLine();
 					System.out.println("Lugar de trabajo del contacto: \n");
 					String job = scan.nextLine();
-					scan.nextLine();
 					con.agregarContacto(name, lname, numtel, mail, job);
 				}else if(caso == 3){
 					System.out.println("POR FAVOR INGRESE EL NUMERO DE USUARIO QUE DESEA ELIMINAR...\n");
@@ -215,7 +214,32 @@ public class Driver{
 				break;
 
 				case 5:
-				System.out.println(con.opcionCinco());
+				System.out.print("\nPor favor elija la opcion del cultivo del cual quiera saber mas información\n");
+				for( int i = 0; i < con.opcionCinco(2).length; i++){
+					System.out.print(i+1 + "." + con.opcionCinco(2)[i]+ "\n");
+				}
+				while(banderainicio == true){
+					try{
+						int cul = scan.nextInt();
+						if(cul<= 16 && cul >=1){
+							System.out.print(con.opcionCinco(1)[cul-1]);
+							banderainicio = false;
+						}
+						else{
+							System.out.println("Error: opcion invalida\n"
+							+ "Ingresa una opcion nuevamente");
+						}
+					}
+					catch(InputMismatchException e){
+						System.out.println("Error: opcion invalida\n"
+							+ "Ingresa una opcion nuevamente");
+						scan.next();
+					}
+				}
+				
+					
+					
+					
 				break;
 
 				case 6:

@@ -13,6 +13,7 @@ public class Control{
 	String clima;
 	String departamento;
 	String [] listadepas;
+	String [] lista2;
 	
 
 
@@ -57,7 +58,7 @@ public class Control{
 	
 	
 	public void opcionTres(){
-		if(cultivo.getCultivo().equalsIgnoreCase("cardamomo")) {
+						if(cultivo.getCultivo().equalsIgnoreCase("cardamomo")) {
 							tutos.Cardamomo();
 						}
 						else if(cultivo.getCultivo().equalsIgnoreCase("frijol")) {
@@ -109,8 +110,14 @@ public class Control{
 		return listadepas;
 	}
 
-	public String opcionCinco(){
-		return cat.getCatalogo();
+	public String[] opcionCinco(int opcion){
+		if(opcion == 1){
+			lista2 = cat.getCatalogo();
+		}
+		else if(opcion == 2){
+			lista2 = cat.getcultivos();
+		}
+		return lista2;
 	}
 	
 	public String mostrarAgenda(){
