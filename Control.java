@@ -102,6 +102,8 @@ public class Control{
 						else if(cultivo.getCultivo().equalsIgnoreCase("cebolla")) {
 							tutos.Cebolla();
 						}
+						else if(cultivo.getCultivo().equalsIgnoreCase("cana")) {
+							tutos.Cana();
 	}
 	
 	public String[] getlistadepartamentos(int opcion){
